@@ -1,5 +1,6 @@
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
+ SampleLambda:        
         Type: "AWS::Lambda::Function"
         Properties:
             Handler: lambda_function.lambda_handler
