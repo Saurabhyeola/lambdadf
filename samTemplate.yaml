@@ -4,6 +4,7 @@ Resources:
   CDDemoLambda:
     Type: AWS::Lambda::Function
     Properties:
+      Handler: index.handler
       Runtime: nodejs14.x
       Code:
         S3Bucket: meteor-350-1
