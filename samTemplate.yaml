@@ -1,13 +1,13 @@
 AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Sereverless-2016-10-31'
 Description: CD Demo Lambda
 Resources:
   CDDemoLambda:
-    Type: AWS::Lambda::Function
+    Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
       Runtime: nodejs14.x
-      CodeRepository:
-        RepositoryUrl: "https://github.com/Saurabhyeola/lambdadf/tree/main/LambdaCode"
+      CodeUri: ./LambdaCode
       Description: Lambda function for CD Demo
       MemorySize: 128
       Timeout: 30
