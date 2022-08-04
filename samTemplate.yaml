@@ -7,7 +7,7 @@ Resources:
     Properties:
       Handler: index.handler
       Runtime: nodejs14.x
-      CodeUri: ./LambdaCode
+      CodeUri: ./LambdaCode/test.zip
       Description: Lambda function for CD Demo
       MemorySize: 128
       Timeout: 30
